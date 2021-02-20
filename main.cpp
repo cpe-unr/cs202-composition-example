@@ -1,25 +1,5 @@
 #include <iostream>
-
-class Stomach {
-    bool functioning = true;
-public:
-    Stomach() {
-        std::cout << "stomach constructor" << std::endl;
-    }
-
-    ~Stomach() {
-        std::cout << "stomach destructor" << std::endl;
-    }
-
-    bool statusCheck() {
-        return functioning;
-    }
-
-    void gotHit(){
-        functioning = false;
-    }
-
-};
+#include "stomach.h"
 
 class Person {
     std::string name;
